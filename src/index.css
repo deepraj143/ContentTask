@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7.5px 15px 7.5px 0;
+  position: absolute;
+  top: 0;
+  left: 0px !important;
+  z-index: 2;
+}
+.triangle.pt-10 {
+  margin-top: 2rem;
+  padding-top: 1px;
+}
+.triangle.red {
+  border-color: transparent rgba(254, 226, 226, 1) transparent transparent;
+}
+.triangle.yellow {
+  border-color: transparent rgba(254, 243, 199, 1) transparent transparent;
+}
+.triangle.green {
+  border-color: transparent rgba(209, 250, 229, 1) transparent transparent;
+}
+
+.fitcontain {
+  height: fit-content;
+}
+
+.react-calendar {
+  width: 290px !important;
+}
+:hover.hovereffect {
+  box-shadow: 0px 6px 14px 13px rgba(0, 0, 0, 0.18);
+  z-index: 203330;
+}
